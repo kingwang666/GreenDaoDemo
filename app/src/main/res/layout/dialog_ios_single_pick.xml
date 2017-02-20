@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:minWidth="250dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_selector"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="取消"
+            android:textColor="@color/red300"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/complete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/clickable_selector"
+            android:padding="12dp"
+            android:text="确定"
+            android:textColor="@color/blue600"/>
+    </FrameLayout>
+
+
+    <kankan.wheel.widget.wheel2.WheelView2
+        android:id="@+id/picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mv2_dividerEnable="false"
+        app:wv2_cycle="true"
+        app:wv2_textSize="20sp"
+        app:wv2_visibleItems="4"/>
+
+
+</LinearLayout>

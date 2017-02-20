@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/phone_menu"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_phone_black_24dp"
+        android:title="@string/phone"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sms_menu"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="@string/send_sms"
+        app:showAsAction="ifRoom"/>
+</menu>

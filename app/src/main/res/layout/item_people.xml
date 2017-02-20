@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wang.interviewassistant.widget.SwipeItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <FrameLayout
+        android:id="@+id/click_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/clickable_selector"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/interview_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/dividerColor"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/bad_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@drawable/clickable_red_selector"
+            android:text="@string/bad"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/good_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:background="@drawable/clickable_blue_selector"
+            android:text="@string/good"/>
+
+    </LinearLayout>
+
+</com.wang.interviewassistant.widget.SwipeItemView>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">面试小助手哦~</string>
+    <string name="action_settings">Settings</string>
+    <string name="good">合适</string>
+    <string name="bad">不合适</string>
+    <string name="delete">删除</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
+    <string name="send_sms">send sms</string>
+    <string name="callback_time">回复时间</string>
+    <string name="interview_time">面试时间</string>
+    <string name="save">保存</string>
+    <string name="rationale_sms">拒绝将无法发送短信</string>
+    <string name="rationale_take_photo">拒绝将无法拨打电话</string>
+
+    <string name="sms" formatted="false">%s通知:\n您好!\n请您于 [%s] 到 [%s] 参加面试。如因故不能按时到达或者不能参加面试，请提前与我们联系。\n联系电话：%s\n联系人：%s\n祝您好运！</string>
+    <string name="company_info">公司信息</string>
+    <string name="people_detail">个人信息</string>
+</resources>
