@@ -171,7 +171,7 @@ public class PeopleFragment extends BaseKWFragment implements PeopleFragmentPres
 
     @NeedsPermission(Manifest.permission.CALL_PHONE)
     public void call(People people) {
-
+        CallUtil.callPhone(getContext(), people.getPhone());
     }
 
     @OnShowRationale(Manifest.permission.CALL_PHONE)

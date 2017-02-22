@@ -16,6 +16,7 @@ import com.wang.interviewassistant.R;
 import com.wang.interviewassistant.model.People;
 import com.wang.interviewassistant.model.UserInfo;
 import com.wang.interviewassistant.presenter.PeopleActivityPresenter;
+import com.wang.interviewassistant.util.CallUtil;
 import com.wang.interviewassistant.util.InputTypeCheck;
 import com.wang.interviewassistant.util.SMSUtil;
 import com.wang.interviewassistant.util.StringUtil;
@@ -223,7 +224,7 @@ public class PeopleDetailActivity extends BaseKWActivity implements DatePickerDi
 
     @NeedsPermission(Manifest.permission.CALL_PHONE)
     public void call(People people) {
-
+        CallUtil.callPhone(this, people.getPhone());
     }
 
     @OnShowRationale(Manifest.permission.CALL_PHONE)
